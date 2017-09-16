@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery: função append</title>
+		
+		<script src="js/jquery-3.2.1.js"></script>
+		
+		<script>
+			$(function() {
+				$("#AdicionarTexto").click(function () {
+					$(".texto").append("Novo texto: " + new Date() + "<br />");
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<h2>JQuery: função Append</h2>
+		<h1>Título</h1>
+		<input type="button" id="AdicionarTexto" value="Inserir novo texto" />
+		<p class="texto">
+			
+		</p>
+	<body>
+</html>
